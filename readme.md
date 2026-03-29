@@ -178,7 +178,7 @@ PixelOptimize utilise l'API **Groq** pour les agents LLM (Agent Décideur et Age
 #### Envoyer par mail comment la configurer 
 
 
-> ⚠️ Ne partagez jamais votre clé API..
+> ⚠️ Ne partagez jamais votre clé API.
 
 ---
 
@@ -205,30 +205,29 @@ http://localhost:5678/webhook/compression-pipeline
 
 ## Utilisation du Système
 
-### Lancer le serveur Flask
+### ⚠️ Ordre de lancement obligatoire pour le Workflow avec Streamlit
 
+Pour que l'application Streamlit fonctionne correctement, vous devez **respecter cet ordre** :
+
+**1️⃣ Lancer le serveur Flask** *(Terminal 1)*
 ```bash
 python server_groq.py
 ```
+> Attendre le message `Running on http://0.0.0.0:5000` avant de continuer.
 
-Serveur disponible sur : `http://0.0.0.0:5000`
+**2️⃣ Publier et activer le workflow Streamlit dans n8n**
+- Ouvrir [http://localhost:5678](http://localhost:5678)
+- Importer `Streamlit_WORKFLOW_n8n_compressionX.json`
+- Cliquer sur le bouton **"Active"** (toggle en haut à droite) pour activer le workflow
+- Vérifier que le webhook est bien actif sur : `http://localhost:5678/webhook/compression-pipeline`
 
-Vérifier que le serveur fonctionne :
-```bash
-curl http://localhost:5000/health
-```
-
----
-
-### Lancer l'application Streamlit *(Workflow 1 uniquement)*
-
-Dans un **deuxième terminal** :
-
+**3️⃣ Lancer l'application Streamlit** *(Terminal 2)*
 ```bash
 streamlit run n8nstrm.py
 ```
+> Le navigateur s'ouvre automatiquement sur [http://localhost:8501](http://localhost:8501)
 
-Le navigateur s'ouvre automatiquement sur [http://localhost:8501](http://localhost:8501)
+> ❌ **Si vous ne respectez pas cet ordre, l'application ne fonctionnera pas.**
 
 ---
 
@@ -304,6 +303,7 @@ Pour chaque image testée, le système génère :
 | HEIF / AVIF non supporté | `pip install pillow-heif pillow-avif-plugin` |
 | VS Code venv non reconnu | `Ctrl+Shift+P → Python: Select Interpreter → venv/` |
 | Réponse vide de n8n | Vérifier que le workflow est activé dans n8n |
+| Streamlit ne répond pas | Vérifier que Flask est lancé **avant** Streamlit et que le workflow n8n est actif |
 
 ---
 
@@ -332,6 +332,6 @@ Licence IRM
 
 # PixelOptimize
 
-Système Intelligent Multi‑Agents pour l’Optimisation de Compression d’Images
+Système Intelligent Multi‑Agents pour l'Optimisation de Compression d'Images
 
 ---
