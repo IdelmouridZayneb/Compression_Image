@@ -219,6 +219,8 @@ python server_groq.py
 - Ouvrir [http://localhost:5678](http://localhost:5678)
 - Importer `Streamlit_WORKFLOW_n8n_compressionX.json`
 - Cliquer sur le bouton **"Active"** (toggle en haut à droite) pour activer le workflow
+- Publish workflow doit etre en vert
+- Execute workflow (voir que le workflow lance et attends l'entrer de donnee de streamlit)
 - Vérifier que le webhook est bien actif sur : `http://localhost:5678/webhook/compression-pipeline`
 
 **3️⃣ Lancer l'application Streamlit** *(Terminal 2)*
