@@ -93,7 +93,7 @@ cd Compression_Image
 
 #### PyCharm
 PyCharm crée automatiquement un environnement virtuel. Si ce n'est pas le cas :
-- **File → Settings → Project → Python Interpreter → Add Interpreter → Virtual Environment**
+- **File → Settings → Project → Python Interpreter → Add Interpreter → Virtual Environnement**
 
 #### VS Code *(obligatoire)*
 
