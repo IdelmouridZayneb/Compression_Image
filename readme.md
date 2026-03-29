@@ -31,7 +31,7 @@ Serveur **Flask API** qui héberge les agents intelligents, gère le traitement 
 | Agent | Rôle |
 |-------|------|
 | **🔬 Agent Analyste** | Extrait les caractéristiques visuelles : entropie, variance, contours, OCR, type d'image |
-| **🧠 Agent Décideur** | Deux agents IA (Groq llama-3.3-70b) analysent les caractéristiques et proposent chacun une stratégie de compression, puis sélectionnent ensemble la solution optimale |
+| **🧠 Agent Décideur** | Deux agents IA analysent les caractéristiques et proposent chacun une stratégie de compression, puis sélectionnent ensemble la solution optimale |
 | **⚖️ Agent Comparateur** | Compare les deux stratégies proposées et valide la décision finale |
 | **⚙️ Agent Exécuteur** | Applique la compression physique au format choisi (JPEG/PNG/WebP/AVIF/HEIF) |
 | **📋 Agent Rapporteur** | Calcule SSIM · PSNR · MSE · τ% · Q/T et génère le rapport complet |
