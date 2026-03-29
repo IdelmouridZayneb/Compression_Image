@@ -1,6 +1,6 @@
 """
 app_presentation.py — PixelOptimize · Light Premium Design
-Lance avec : streamlit run app_presentation.py
+Lance avec : streamlit run n8nstrm.py
 """
 
 import streamlit as st
