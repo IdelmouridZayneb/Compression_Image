@@ -324,7 +324,7 @@ Pour chaque image testée, le système génère :
 ## Auteurs
 
 **Équipe 4 · Université Hassan II · FSTM**
-Module : Traitement d'Images · Licence IRM
+Licence IRM
 
 ---
 
