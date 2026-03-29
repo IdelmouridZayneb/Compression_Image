@@ -175,33 +175,8 @@ $env:TESSERACT_PATH = "C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 PixelOptimize utilise l'API **Groq** pour les agents LLM (Agent Décideur et Agent Comparateur).
 
-#### Obtenir une clé Groq
-1. Rendez-vous sur [https://console.groq.com](https://console.groq.com)
-2. Créez un compte gratuit
-3. Générez une clé API dans **API Keys**
+#### Envoyer par mail comment la configurer 
 
-#### Configurer la clé API
-
-**Option A — Variable d'environnement (recommandée) :**
-
-```bash
-# Linux/macOS
-export GROQ_API_KEY="votre_clé_groq_ici"
-
-# Windows (PowerShell)
-$env:GROQ_API_KEY = "votre_clé_groq_ici"
-
-# Windows (CMD)
-set GROQ_API_KEY=votre_clé_groq_ici
-```
-
-**Option B — Fichier `.env` :**
-
-Créez un fichier `.env` à la racine du projet :
-```
-GROQ_API_KEY=votre_clé_groq_ici
-TESSERACT_PATH=/usr/local/bin/tesseract
-```
 
 > ⚠️ Ne partagez jamais votre clé API. Ajoutez `.env` dans votre `.gitignore`.
 
