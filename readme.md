@@ -178,7 +178,7 @@ PixelOptimize utilise l'API **Groq** pour les agents LLM (Agent Décideur et Age
 #### Envoyer par mail comment la configurer 
 
 
-> ⚠️ Ne partagez jamais votre clé API. Ajoutez `.env` dans votre `.gitignore`.
+> ⚠️ Ne partagez jamais votre clé API..
 
 ---
 
