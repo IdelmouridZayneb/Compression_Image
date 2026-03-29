@@ -1,6 +1,6 @@
 # PixelOptimize — Système Multi‑Agents Intelligent pour l'Optimisation de la Compression d'Images
 
-**Mini-Projet · Licence IRM · Module : Traitement d'Images**
+**Mini-Projet · Licence IRM**
 **Équipe 4 · Université Hassan II · FSTM**
 
 ---
